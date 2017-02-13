@@ -61,7 +61,7 @@ names(avg.interval) <- c('interval', 'avg.steps')
 library(ggplot2)
 ggplot(avg.interval, aes(x=interval, y=avg.steps)) + geom_line(colour="blue") + labs(title = "Plot of Average Steps Taken in Each 5-minute Interval", x = "5-minute Interval", y = "Average Steps")
 ```
-![plot of chunk unnamed-chunk-3-1.png](./figure-html/unnamed-chunk-3-1) 
+![plot of chunk unnamed-chunk-3-1.png](./figure-html/unnamed-chunk-3-1.png) 
 ```r
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 avg.interval[which.max(avg.interval$avg.steps),]
