@@ -61,7 +61,8 @@ names(avg.interval) <- c('interval', 'avg.steps')
 library(ggplot2)
 ggplot(avg.interval, aes(x=interval, y=avg.steps)) + geom_line(colour="blue") + labs(title = "Plot of Average Steps Taken in Each 5-minute Interval", x = "5-minute Interval", y = "Average Steps")
 ```
-![plot of chunk unnamed-chunk-1-3.png](./figure-html/unnamed-chunk-1-3.png) 
+![plot of chunk unnamed-chunk-1-1.png](./figure-html/unnamed-chunk-1-1.png) 
+###3. Calculate and report the mean and median of the total number of steps taken per day.
 
 ```r
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
