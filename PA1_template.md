@@ -62,7 +62,7 @@ library(ggplot2)
 ggplot(avg.interval, aes(x=interval, y=avg.steps)) + geom_line(colour="blue") + labs(title = "Plot of Average Steps Taken in Each 5-minute Interval", x = "5-minute Interval", y = "Average Steps")
 ```
 
-![unnamed-chunk-3](/RepData_PeerAssessment1/figure-html/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-1-3.png] (./figure-html/unnamed-chunk-1-3.png) 
 
 ```r
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -103,7 +103,7 @@ par(mfrow = c(1, 1))
 hist(total.steps.full$steps, breaks = 20, main = "Total Number of Steps Taken Each Day", col = "blue", border = "white", xlab = "Steps", ylab="Frequency", xlim=c(0,25000),ylim=c(0,8))
 ```
 
-![unnamed-chunk-4](/RepData_PeerAssessment1/figure-html/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-1-4.png] (./figure-html/unnamed-chunk-1-4.png) 
 
 ```r
 #mean of total number of steps taken per day
@@ -159,6 +159,7 @@ ggplot(week.interval, aes(x=interval, y=steps, color = week.type)) +
   geom_line() +
   facet_wrap(~week.type, ncol = 1, nrow=2)
 ```
-![unnamed-chunk-5](/RepData_PeerAssessment1/figure-html/unnamed-chunk-5.png) 
+
+![plot of chunk unnamed-chunk-1-5.png] (./figure-html/unnamed-chunk-1-5.png) 
 
 
