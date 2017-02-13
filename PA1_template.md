@@ -30,7 +30,7 @@ par(mfrow = c(1, 1))
 hist(total.steps$steps, breaks = 20, main = "Total Number of Steps Taken Each Day", col = "blue", border = "white", xlab = "Steps", ylab="Frequency", xlim=c(0,25000),ylim=c(0,8))
 ```
 
-![unnamed-chunk-1](/RepData_PeerAssessment1/figure-html/unnamed-chunk-1.png) 
+![unnamed-chunk-1](/RepData_PeerAssessment1/blob/master/figure-html/unnamed-chunk-1-1.png) 
 ###3. Calculate and report the mean and median of the total number of steps taken per day.
 
 ```r
