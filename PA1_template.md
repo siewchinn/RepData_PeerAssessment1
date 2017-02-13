@@ -30,7 +30,7 @@ par(mfrow = c(1, 1))
 hist(total.steps$steps, breaks = 20, main = "Total Number of Steps Taken Each Day", col = "blue", border = "white", xlab = "Steps", ylab="Frequency", xlim=c(0,25000),ylim=c(0,8))
 ```
 
-![plot of chunk unnamed-chunk-1-1.png] (./figure-html/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-1-1.png](./figure-html/unnamed-chunk-1-1.png) 
 ###3. Calculate and report the mean and median of the total number of steps taken per day.
 
 ```r
@@ -61,8 +61,7 @@ names(avg.interval) <- c('interval', 'avg.steps')
 library(ggplot2)
 ggplot(avg.interval, aes(x=interval, y=avg.steps)) + geom_line(colour="blue") + labs(title = "Plot of Average Steps Taken in Each 5-minute Interval", x = "5-minute Interval", y = "Average Steps")
 ```
-
-![plot of chunk unnamed-chunk-1-3.png] (./figure-html/unnamed-chunk-1-3.png) 
+![plot of chunk unnamed-chunk-1-3.png](./figure-html/unnamed-chunk-1-3.png) 
 
 ```r
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -102,9 +101,7 @@ names(total.steps.full) <- c('date', 'steps')
 par(mfrow = c(1, 1))
 hist(total.steps.full$steps, breaks = 20, main = "Total Number of Steps Taken Each Day", col = "blue", border = "white", xlab = "Steps", ylab="Frequency", xlim=c(0,25000),ylim=c(0,8))
 ```
-
-![plot of chunk unnamed-chunk-1-4.png] (./figure-html/unnamed-chunk-1-4.png) 
-
+![plot of chunk unnamed-chunk-1-4.png](./figure-html/unnamed-chunk-1-4.png) 
 ```r
 #mean of total number of steps taken per day
 mean(total.steps.full$steps, na.rm=TRUE) 
@@ -160,6 +157,6 @@ ggplot(week.interval, aes(x=interval, y=steps, color = week.type)) +
   facet_wrap(~week.type, ncol = 1, nrow=2)
 ```
 
-![plot of chunk unnamed-chunk-1-5.png] (./figure-html/unnamed-chunk-1-5.png) 
+![plot of chunk unnamed-chunk-1-5.png](./figure-html/unnamed-chunk-1-5.png) 
 
 
